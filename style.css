@@ -108,5 +108,5 @@ body {
 
 .active:hover {
     border: solid 2px #ddd;
-    background-color: transparent;
+    background-color: #ddd;
 }

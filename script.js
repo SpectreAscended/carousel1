@@ -4,9 +4,21 @@ const btnBack = document.querySelector('.icon-back');
 const btnForward = document.querySelector('.icon-forward');
 const images = document.querySelector('.carousel');
 const indicators = document.querySelector('.indicators');
+const imageBox = document.querySelector('.carousel-box');
+
 
 let slider = 0;
 let curSlide = 1;
+
+imageBox.addEventListener('click', function(e) {
+    let slide = +e.target.dataset.slide;
+    if(!slide) return;
+    console.log(slide);
+    slider = (-700 * slide) + 700;
+    images.style.transform = `translateX(${slider}px)`;
+    curSlide = slide;
+    createDots(curSlide);
+});
 
 btnForward.addEventListener('click', function(e) {
     slider -= 700;
