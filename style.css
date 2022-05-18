@@ -110,3 +110,20 @@ body {
     border: solid 2px #ddd;
     background-color: #ddd;
 }
+
+
+/* .carat {
+    height: 3rem;
+    width: 3rem;
+    border-right: solid 7px #fff;
+    border-bottom: solid 7px #fff;
+    margin-top: 2rem;
+    transform: rotate(-45deg);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color 250ms ease-in;
+}
+
+.carat:hover {
+    border-color: #ddd;
+} */
